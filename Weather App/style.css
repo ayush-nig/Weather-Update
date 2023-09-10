@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+.container{
+    min-height: 100vh;
+    display: flex;                          /*Provides flexibility for positioning our child elements.*/
+    flex-direction: column;
+    justify-content: center;                /*For centering Horizontally*/
+    align-items: center;                    /*For centering Vertically*/
+    background-color: aquamarine;
+}
+.searchbox{
+    width: 400px;
+    height: min-content;                    /*Will occupy the height as required by its contents.*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 28px;
+    border-radius: 12px;
+}
+.searchbox input{
+    font-size: 18px;
+    padding: 13px;
+    text-transform: capitalize;             /*will make first letter capital, of placeholder*/
+    background-color: aliceblue;
+    border-radius: 14px;
+}
+.searchbox input::placeholder{
+    color: black;
+}
+.searchbox button{
+    width: 45px;
+    height: 45px;
+    background-color: aliceblue;
+    border-radius: 50%;                     /*In order to make circle*/ 
+    font-size: 18px;
+}
+.searchbox button:hover{
+    background-color: rgb(211, 214, 211);
+}
+.weatherbody{
+    width: 400px;
+    height: 60vh;                  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px; 
+    background-color: white;
+    border-radius: 14px;
+}
+.weatherbody img{
+    width: 60%;
+    margin-bottom: 24px;
+}
+.weatherbox{
+    margin-bottom: 18px;
+    text-align: center;
+}
+.temperature{
+    font-size: 25px;
+    font-weight: 500;
+}
+.weatherbox .description{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;                          /*will make first letter capital*/
+}
+.weatherdetails{
+    width: 80%;
+    display: flex;                                       /*By default flex dxn. is row*/
+    justify-content: space-between;
+}
+.humidity, .windspeed{
+    display: flex;                                       /*By default flex dxn. is row*/
+    align-items: center;
+}
+.weatherdetails i{
+    font-size: 22px;
+}
+.weatherdetails .text{
+    margin-left: 10px;
+}
+#humidity, #speed{
+    font-weight: 500;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter Your location" class="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="btn"></button>
+            </div>
+        </div>
+        <div class="weatherbody">
+            <img src="rain.png" alt="Weather-Image" class="weather-img">
+            <div class="weatherbox">
+                <p class="temperature">0°C</p>
+                <p class="description">light rain</p>
+            </div>
+            <div class="weatherdetails">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">40%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="windspeed">
+                    <i class="fa-solid fa-wind"></i>                <!--Icon tag to place icon.-->
+                    <div class="text">
+                        <span id="speed">25Km/h</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9e747cbdd0.js" crossorigin="anonymous"></script>
+</body>
+</html>
